@@ -1,15 +1,17 @@
-# ADSP
-vendor/bin/adsprpcd
-vendor/lib64/libadsprpc.so
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libfastcvadsp_stub.so
-vendor/lib64/libfastcvopt.so
-vendor/lib/libadsprpc.so
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsp_hvx_callback_skel.so
-vendor/lib/libadsp_hvx_stub.so
-vendor/lib/libfastcvadsp_stub.so
-vendor/lib/libfastcvopt.so
+# ADSP - from LA.UM.7.5.r1-05300-8x96.0
+vendor/bin/adsprpcd|ef200e3bce4429fd9461c74330a003f069ffd5b3
+vendor/lib64/libadsprpc.so|df8d5f2aca5f63e6a507111e7bd4933fadb025cd
+vendor/lib64/libadsp_default_listener.so|58d05c4794c6ceb7b59e332c909a79ab528a4f31
+vendor/lib64/libfastcvadsp_stub.so|6b50fd7d53811b51e06fedd87c12a794d0c2f645
+vendor/lib64/libfastcvopt.so|797b9843ccc1f650d66831d645db2bc96b89c299
+vendor/lib64/libmdsprpc.so|d840233fe680b99eac0d6b515af573c54cc63c66
+vendor/lib/libadsprpc.so|d453518131ebb5f8c855c3d5d75d35f5e9af74a7
+vendor/lib/libadsp_default_listener.so|c08e6d9d07af7b1d04ad7fe994e41243a302a78c
+vendor/lib/libadsp_hvx_callback_skel.so|23e99c81afe6ecaf655aaa93298d65e8d7dfa36a
+vendor/lib/libadsp_hvx_stub.so|bf3348cb891da176a159102b5ef9522a6a26c170
+vendor/lib/libfastcvadsp_stub.so|483fc7e8b11f045f1716611f481b0cd9af20aa82
+vendor/lib/libfastcvopt.so|cee8abd99eba88141c10df99a29650f57c6a284d
+vendor/lib/libmdsprpc.so|a768a35ca6d27cfd62963c4e1559bc29b01def8b
 
 # ADSP modules
 vendor/lib/rfsa/adsp/libadsp_fd_skel.so
@@ -53,7 +55,6 @@ vendor/lib64/libacdbrtac.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libaudioalsa.so
-vendor/lib64/libmdsprpc.so
 vendor/lib64/libqtigef.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libdirac.so
@@ -68,7 +69,6 @@ vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudioalsa.so
-vendor/lib/libmdsprpc.so
 vendor/lib/libqtigef.so
 
 # Bluetooth
