@@ -457,9 +457,9 @@ vendor/lib64/lib-uceservice.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 
-# Keystore
-vendor/lib64/hw/keystore.msm8996.so
-vendor/lib/hw/keystore.msm8996.so
+# Keystore - from LA.UM.7.5.r1-05300-8x96.0
+vendor/lib64/hw/keystore.msm8996.so|58195df09c1bc95c3e54d5594c13c83fdf54ad47
+vendor/lib/hw/keystore.msm8996.so|a8de2add9c6e90765a83e15dcdb9abacb015fb3d
 
 # Listen
 vendor/lib64/hw/sound_trigger.primary.msm8996.so
