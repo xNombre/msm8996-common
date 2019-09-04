@@ -265,24 +265,24 @@ vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|e3d9e9a483cc760fbac5bb4a67b1597
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|262ad4a95e41923978497cfedc23925fc78c2acf
 vendor/lib64/vendor.qti.latency@2.0.so|10329180164d324233098c9b4639747c482624a1
 
-# DPM - from daisy - PKQ1.180917.001
-bin/dpmd|1b38829a7faf33d5cbdc195d703f99384c20c9f4
-etc/dpm/dpm.conf|5f19d3984b5291ac956552bda2a84c10c535df0a
+# DPM - from LA.UM.7.5.r1-05300-8x96.0
+bin/dpmd|b21c674c4e4b1d41d4540721d451c54caf3b0555
+etc/dpm/dpm.conf|fec89edb6cff81424a6c3a730fed92efa3613f72cd
 etc/init/dpmd.rc|52ca6ad920a1804e4ff608113cece063730f5e0c
 etc/permissions/com.qti.dpmframework.xml|36b94c9338069e434b83359a92cdc7ff62b822df
 etc/permissions/dpmapi.xml|ded29f9befaef20a7ccee0c75427fda1d1d04890
-framework/com.qti.dpmframework.jar|4a48456f8ed4b751135b05a99f273996bf35fd9c
-framework/dpmapi.jar|66a30e2752b058f6f522721ef6b5efb4c747f7ed
-framework/tcmclient.jar|5f3878f0fe312a429d3a69a2119b34100818292e
-lib64/com.qualcomm.qti.dpm.api@1.0.so|2af88934e4039edaac842576a1861cbdfe39838b
-lib64/libdpmctmgr.so|595449eff197e8c3bc6f7a4f0242188abe82418f
-lib64/libdpmfdmgr.so|f03869f7bee601182c545e892523d23529439e16
-lib64/libdpmframework.so|9dc137606c1cb73e3ec5a97c954df93e750dd459
-lib64/libdpmtcm.so|1f85ced85f541146756df0b4597a4c51300be63a
--priv-app/dpmserviceapp/dpmserviceapp.apk|a642336052f3e5d70580700e2aebba230a5f663f
-vendor/bin/dpmQmiMgr|31e019a02d25a959a2edfe2c9a04ab958562bb67
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|2af88934e4039edaac842576a1861cbdfe39838b
-vendor/lib64/libdpmqmihal.so|4254cc9f10f6f3d990958c17f4e43d8e9e09c382
+framework/com.qti.dpmframework.jar|6a911929d934835dfb510314e2ddb3492cb5fd5d
+framework/dpmapi.jar|89ddc5bf0c4c88a3f341169edc4d89f9e834337b
+framework/tcmclient.jar|91b415288494fa208b5f5ec9fafa33c47e569c96
+lib64/com.qualcomm.qti.dpm.api@1.0.so|af192d9f13490cadcaea5728b255aedc5b648417
+lib64/libdpmctmgr.so|adef26c5a4360f171790c407aae59233a6f0a1c7
+lib64/libdpmfdmgr.so|520b37cf33b87f2db2a708e2aba429d233d7fbdf
+lib64/libdpmframework.so|8727dde7fd95bd94d6034f3990411f0ef0789217
+lib64/libdpmtcm.so|b91034e12f1a59b05c6c251acdbf1c7c78ffb0aa
+-priv-app/dpmserviceapp/dpmserviceapp.apk|8f153185721c3383f8f5858aee3b0bb73220526c
+vendor/bin/dpmQmiMgr|dbb1d891e545aee60924e4c52a5ee977247714fc
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|af192d9f13490cadcaea5728b255aedc5b648417
+vendor/lib64/libdpmqmihal.so|c4308dafbe378081a132c2f2eba3c4b0d27f51c3
 
 # DRM and SEE
 vendor/bin/qseecomd
