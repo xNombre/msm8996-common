@@ -666,10 +666,10 @@ vendor/bin/thermal-engine|61f954e68514aedeede9cca90cc70b5cd4736e02
 vendor/lib64/libthermalioctl.so|e1597b961c1bee480f018dd7d2cc4e9fc2bb252b
 -vendor/lib/libthermalclient.so|dc66c8ba3a49842f090eb4d15d2143d68987367d
 
-# Time services - from daisy - PKQ1.180917.001
--vendor/app/TimeService/TimeService.apk|78109530538aa8fb533ad288c9d356c57481a10e
-vendor/bin/time_daemon|d67f1c50583b5efca0f5baea00a51056a798b7f8
-vendor/lib64/libtime_genoff.so|8f4c1f9ace6af463b241b130d6872b5d39cc7b2a
+# Time services - from LA.UM.7.5.r1-05300-8x96.0
+-vendor/app/TimeService/TimeService.apk|693a68e35a2cbc40d23b291fcc836c8567f90b14
+vendor/bin/time_daemon|9751573fc9280d1763a5e26931aa1a6a3f9f9256
+vendor/lib64/libtime_genoff.so|3fc2679fef374b6272c543438d61ce283f92e25a
 
 # WiFi - from daisy - PKQ1.180917.001
 vendor/bin/cnss-daemon|badadcc672341e36228301b02c2bfaa36be09233
