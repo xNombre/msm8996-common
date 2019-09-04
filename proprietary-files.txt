@@ -284,17 +284,21 @@ vendor/bin/dpmQmiMgr|dbb1d891e545aee60924e4c52a5ee977247714fc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|af192d9f13490cadcaea5728b255aedc5b648417
 vendor/lib64/libdpmqmihal.so|c4308dafbe378081a132c2f2eba3c4b0d27f51c3
 
-# DRM and SEE
-vendor/bin/qseecomd
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/libqisl.so
-vendor/lib64/librpmb.so
-vendor/lib64/libssd.so
-vendor/lib/libQSEEComAPI.so
+# DRM and SEE - from LA.UM.7.5.r1-05300-8x96.0
+vendor/bin/qseecomd|191536bdf3d72238ea7b3ca54b4289b7a09b4bcd
+vendor/lib64/libGPreqcancel.so|db98eea9ef308792e3b9d48b933b5a5debf1af9e
+vendor/lib64/libGPreqcancel_svc.so|1059a83dda327cae9abc10bda0b8a8c526b9760d
+vendor/lib64/libQSEEComAPI.so|c2562b6f2b6e9e2a30c72f0638ae0c16365c0022
+vendor/lib64/libSecureUILib.so|725350f672b416601a11e2c5e5727f8e2dd77c43
+vendor/lib64/libStDrvInt.so|768602d8b0c04ff8d09ebcf010c19ccb589dc4a7
+vendor/lib64/libdrmfs.so|87526b8b660fc8c27f0c07f1ac2d0d36544ae624
+vendor/lib64/libdrmtime.so|d0ff3f243f399f4b8b3aeeb7f2667d094a95e3c6
+vendor/lib64/libqisl.so|1f1523c03daffa9e1cd45d96d212d2fa8c1b5790
+vendor/lib64/librpmb.so|9f88e88cd8155b69a085548a60a15c5b5be70f48
+vendor/lib64/libsecureui.so|0aa9a03ebcba352ad29122381d5e285a73f08451
+vendor/lib64/libsecureui_svcsock.so|dbd7400a449a10573a2d8d3aafc0214a64aa1cd7
+vendor/lib64/libssd.so|a3b4f5c81b96966f8d2a1a2f8518522f223e73fb
+vendor/lib/libQSEEComAPI.so|ca74ebd4225afbb8fd02ea72cd0c04303da9c2f2
 
 # DRM Widevine - from marlin - PPR2.181005.003
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine|2c2455a218eb8d5368f1ccd39bea51be8364a0f3
