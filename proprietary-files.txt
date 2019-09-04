@@ -671,6 +671,14 @@ vendor/lib64/libthermalioctl.so|e1597b961c1bee480f018dd7d2cc4e9fc2bb252b
 vendor/bin/time_daemon|9751573fc9280d1763a5e26931aa1a6a3f9f9256
 vendor/lib64/libtime_genoff.so|3fc2679fef374b6272c543438d61ce283f92e25a
 
+# TUI - from LA.UM.7.5.r1-05300-8x96.0
+lib/vendor.qti.hardware.tui_comm@1.0.so|b2804e0c3f93f67f194fac9e35401ecfcfa9686f
+lib64/vendor.qti.hardware.tui_comm@1.0.so|76c70db849ac843c2925c6bb4cb7970e17868150
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|a03d6e00d398164ceac442e15b68f6af7cb36e71
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|b2804e0c3f93f67f194fac9e35401ecfcfa9686f
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|76c70db849ac843c2925c6bb4cb7970e17868150
+
 # WiFi - from daisy - PKQ1.180917.001
 vendor/bin/cnss-daemon|badadcc672341e36228301b02c2bfaa36be09233
 
