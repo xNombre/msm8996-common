@@ -473,30 +473,23 @@ vendor/lib64/liblearningmodule.so
 vendor/lib64/libmeters.so
 vendor/lib64/libreffeature.so
 
-# Media - from op3 - PKQ1.181203.001
-lib64/libmmosal.so|69955ea76049f726337bd4575f077cf49211f0d4
-lib/extractors/libmmparser.so|3085f90dc634e3eec7f9dfef94b0ae09ce4fb2bc
-lib/libFileMux.so|5961dd16c9c6808e8321abf4b0266a9926ef327b
-lib/libmmosal.so|ca8714ad8bd64ae9d23222df6098fbb949e75d96
-lib/libmmparser_lite.so|c8214b76f1cdec6faa111f65ff3d94bbf01051eb
-lib/libOmxMux.so|e9a5a682aec61b572817457b1d42caf7a3a27d6f
+# Media - from LA.UM.7.5.r1-05300-8x96.0
 vendor/lib64/libgpustats.so|1a091475fb4a744f091bec101a51044fb8854a15
 vendor/lib/libgpustats.so|83d8856717923ab389aecf17445e33fc21b90afc
 vendor/lib/libI420colorconvert.so|6c280c2b27c0d3e482ee3b7b6fa966f6fbb8d9bb
 vendor/lib/libmm-color-convertor.so|01a87ba3433679bde836d6ac8c8f44efcc24bf10
-vendor/lib/libmmosal_proprietary.so|7b4070890dbc94bf59821f88abe617f8f208bd94
-vendor/lib/libOmxAacDec.so|e158dfa4e991d90a9afdb99e5154614ffe63d926
-vendor/lib/libOmxAlacDec.so|5fe4f81e7a38c762b481cc06079b3847527da231
+vendor/lib/libOmxAacDec.so|3dde533badadb6894b5b9ab795534e73feb26cc6
+vendor/lib/libOmxAlacDec.so|dee5a9df5a0b8e12254813ac7b246b2d62ba4786
 vendor/lib/libOmxAlacDecSw.so|111e096e79b2b0c5cc48a88643bc3ebbf1975814
-vendor/lib/libOmxAmrDec.so|d252eea3c16e746cbdf80ad7c8f94e20fcc66c32
-vendor/lib/libOmxAmrwbplusDec.so|ffbb0b8ea9cf6557944fb82267ad60606999e7a3
-vendor/lib/libOmxApeDec.so|312f4186f9adcc42fcb0486466bdfe6ddc950990
+vendor/lib/libOmxAmrDec.so|335caff5c76f3e7a4a86871841fca1e7477a89a9
+vendor/lib/libOmxAmrwbplusDec.so|d154263b6cfaf092336c5b52b36fff117e6f09c0
+vendor/lib/libOmxApeDec.so|a556029e9bd0c062f7ffeceeeb370d248a33eb0f
 vendor/lib/libOmxApeDecSw.so|0f411fda1ac0305f592963cc2a6d801ed0c394ab
 vendor/lib/libOmxEvrcDec.so|088df3c77446f325a535418dd86dc8cae41e69e2
 vendor/lib/libOmxQcelp13Dec.so|5388cb90be81f05cfadd553b6c2ec46243fc58fc
-vendor/lib/libOmxVideoDSMode.so|45bbcc28e169f18bc4a783c304c6f80e223ab7c7
-vendor/lib/libOmxVpp.so|73b7e5d6bd4d4dae37c28dac0f52cfa788ac79f7
-vendor/lib/libOmxWmaDec.so|e5e418df146f9f3c22d060857182557f1197962b
+vendor/lib/libOmxVideoDSMode.so|be17aa8670c5dca2cdfe47fbdfcafc8eb278a7b0
+vendor/lib/libOmxVpp.so|73d784cedc36cc1077f7a4d43b58186470491167
+vendor/lib/libOmxWmaDec.so|02899d3cdbc7a0b39456eec57a51d2ba07765efb
 vendor/lib/libvpplibrary.so|316e22a194a84d9eb5732d4e25c159575dac91e3
 vendor/lib/libvpphvx.so|f9e3229d44ad22e808ee7ed4d8d1c529195ed6a9
 vendor/lib/libvqzip.so|0b906db131e99cd5460b8a72d05e86721243de95
