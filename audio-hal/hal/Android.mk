@@ -8,7 +8,7 @@ LOCAL_ARM_MODE := arm
 
 AUDIO_PLATFORM := $(TARGET_BOARD_PLATFORM)
 
-ifneq ($(filter msm8974 msm8226 msm8610 apq8084 msm8994 msm8992 msm8996 msm8998 apq8098_latv sdm845 sdm710 qcs605 msmnile $(MSMSTEPPE) $(TRINKET),$(TARGET_BOARD_PLATFORM)),)
+ifneq ($(filter msm8974 msm8226 msm8610 apq8084 msm8994 msm8992 msm8996 msm8998 apq8098_latv sdm845 sdm710 qcs605 msmnile $(MSMSTEPPE) $(TRINKET) kona,$(TARGET_BOARD_PLATFORM)),)
   # B-family platform uses msm8974 code base
   AUDIO_PLATFORM = msm8974
   MULTIPLE_HW_VARIANTS_ENABLED := true
@@ -50,6 +50,9 @@ ifneq ($(filter $(MSMSTEPPE) ,$(TARGET_BOARD_PLATFORM)),)
 endif
 ifneq ($(filter $(TRINKET) ,$(TARGET_BOARD_PLATFORM)),)
   LOCAL_CFLAGS := -DPLATFORM_TRINKET
+endif
+ifneq ($(filter kona,$(TARGET_BOARD_PLATFORM)),)
+  LOCAL_CFLAGS := -DPLATFORM_KONA
 endif
 endif
 
@@ -438,6 +441,17 @@ ifeq ($(strip $(AUDIO_FEATURE_ELLIPTIC_ULTRASOUND_SUPPORT)),true)
     LOCAL_SRC_FILES += audio_extn/ultrasound.c
 endif
 
+ifeq ($(strip $(AUDIO_FEATURE_ENABLED_KEEP_ALIVE_ARM_FFV)), true)
+    LOCAL_CFLAGS += -DRUN_KEEP_ALIVE_IN_ARM_FFV
+endif
+
+ifeq ($(strip $(AUDIO_FEATURE_ENABLED_FFV)), true)
+    LOCAL_CFLAGS += -DFFV_ENABLED
+    LOCAL_C_INCLUDES += $(TARGET_OUT_HEADERS)/mm-audio-noship/include/ffv
+    LOCAL_SRC_FILES += audio_extn/ffv.c
+endif
+
+LOCAL_CFLAGS += -D_GNU_SOURCE
 LOCAL_CFLAGS += -Wall -Werror
 LOCAL_CLANG_CFLAGS += -Wno-unused-variable -Wno-unused-function -Wno-missing-field-initializers
 
@@ -454,6 +468,16 @@ ifeq ($(strip $(AUDIO_FEATURE_ENABLED_EXT_HW_PLUGIN)),true)
     LOCAL_SRC_FILES += audio_extn/ext_hw_plugin.c
 endif
 
+ifeq ($(strip $(AUDIO_FEATURE_ENABLED_GCOV)),true)
+    LOCAL_CFLAGS += --coverage -fprofile-arcs -ftest-coverage
+    LOCAL_CPPFLAGS += --coverage -fprofile-arcs -ftest-coverage
+    LOCAL_STATIC_LIBRARIES += libprofile_rt
+endif
+
+ifeq ($(strip $(AUDIO_FEATURE_ENABLED_A2DP_DECODERS)), true)
+    LOCAL_CFLAGS += -DAPTX_DECODER_ENABLED
+endif
+
 LOCAL_MODULE := audio.primary.$(TARGET_BOARD_PLATFORM)
 
 LOCAL_MODULE_RELATIVE_PATH := hw
@@ -461,6 +485,7 @@ LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_VENDOR_MODULE := true
+LOCAL_CFLAGS += -DANDROID_PLATFORM_SDK_VERSION=$(PLATFORM_SDK_VERSION)
 
 include $(BUILD_SHARED_LIBRARY)
 
