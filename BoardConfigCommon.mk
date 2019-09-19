@@ -21,6 +21,10 @@ VENDOR_PATH := device/xiaomi/msm8996-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES = \
+    $(VENDOR_PATH)/audio-caf $(VENDOR_PATH)/media-caf
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -207,6 +211,12 @@ WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
+
+# HALs
+USE_DEVICE_SPECIFIC_MEDIA := true
+DEVICE_SPECIFIC_MEDIA_PATH := $(VENDOR_PATH)/media-hal
+USE_DEVICE_SPECIFIC_AUDIO := true
+DEVICE_SPECIFIC_AUDIO_PATH := $(VENDOR_PATH)/audio-hal
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/msm8996-common/BoardConfigVendor.mk
