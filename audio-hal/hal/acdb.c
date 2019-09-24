@@ -112,10 +112,7 @@ int acdb_init_v2(struct mixer *mixer)
 
     ALOGV("%s: DLOPEN successful for %s", __func__, LIB_ACDB_LOADER);
 
-    my_data->acdb_init_v4 = (acdb_init_v4_t)dlsym(my_data->acdb_handle,
-                                                     "acdb_loader_init_v4");
-    if (my_data->acdb_init_v4 == NULL)
-        ALOGE("%s: dlsym error %s for acdb_loader_init_v4", __func__, dlerror());
+    my_data->acdb_init_v4 = NULL;
 
     my_data->acdb_init_v3 = (acdb_init_v3_t)dlsym(my_data->acdb_handle,
                                                      "acdb_loader_init_v3");
